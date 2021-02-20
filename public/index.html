@@ -2,42 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/fl_generic.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Join the Flutter community around the world for this special online event! There will be opportunities to engage, innovate, and collaborate with the global community."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+      body {
+        overflow-y: hidden;
+      }
+      .splash__wrapper {
+        background-color: #fbfbfb;
+        position: absolute;
+        min-height: 100vh;
+        display: grid;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        place-items: center;
+        transition: all ease-in-out 250ms;
+      }
+
+      .flutter__india__logo {
+        height: 50%;
+        box-sizing: content-box;
+      }
+    </style>
+    <title>Flutter Engage Extended - India | Flutter India</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="splash__wrapper">
+      <img
+        class="flutter__india__logo"
+        src="./flutter-splash.gif"
+        alt="Flutter Paint Animation"
+      />
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script>
+     document.addEventListener('DOMContentLoaded',()=>{
+       console.log('ready')
+        setTimeout(() => {
+        let el = document.querySelector(".splash__wrapper");
+        el.style.opacity = 0;
+        document.querySelector("body").style.overflowY = "visible";
+        setTimeout(() => {
+          el.style.display = "none";
+        }, 250);
+      }, 3500);
+     })
+    </script>
   </body>
 </html>

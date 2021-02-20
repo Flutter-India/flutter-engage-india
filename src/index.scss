@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Product Sans", sans-serif;
+}
+
+:root {
+  --color-base: white;
+  --color-base-secondary: #e6e6e6;
+  --color-primary: #025095;
+  --color-highlight: #33befd;
+  --color-text: #000000;
+  --color-text-secondary: #5e5e5e;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--color-base);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-base);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}

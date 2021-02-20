@@ -1,0 +1,56 @@
+.schedule__wrapper {
+  background: var(--color-base-secondary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  justify-content: center;
+
+  .schedule__title {
+    margin-bottom: 4rem;
+    text-align: left;
+    padding-left: 8rem;
+
+    @media only screen and (max-width: 992px) {
+      padding-left: 4rem;
+    }
+
+    .schedule__header {
+      font-size: 2.25rem;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    .schedule__subheader {
+      text-align: left;
+      font-size: 1.25rem;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+    }
+
+    @media only screen and (max-width: 720px) {
+      padding-left: 0rem;
+      text-align: center;
+      padding: 0rem;
+
+      .schedule__header {
+        font-size: 2.25rem;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .schedule__subheader {
+        text-align: center;
+        font-size: 1.25rem;
+        color: var(--color-text-secondary);
+        font-weight: 400;
+      }
+    }
+  }
+  .schedule__image {
+    img {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
