@@ -8,17 +8,18 @@ import {
   Kolkata,
   Nagpur,
   Gwalior,
+  Kerala,
   Generic,
 } from "../assets";
 
 export const communities = [
   {
     logo: Mumbai,
-    title: "Mumbai",
+    title: "Mumbai Community",
   },
   {
     logo: Ahemdabad,
-    title: "Ahemdabad",
+    title: "Ahmedabad",
   },
   {
     logo: Chandigarh,
@@ -30,7 +31,7 @@ export const communities = [
   },
   {
     logo: Vadodra,
-    title: "Vadodra",
+    title: "Vadodara",
   },
   {
     logo: Surat,
@@ -69,5 +70,9 @@ export const communities = [
   {
     logo: Generic,
     title: "Hyderabad",
+  },
+  {
+    logo: Kerala,
+    title: "Kerala",
   },
 ];

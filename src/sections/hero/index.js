@@ -24,7 +24,7 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="hero__schedule">Saturday, 13 March</div>
+            <div className="hero__schedule">Saturday, 13 March, 2021</div>
             <button className="hero__call__to__action">Register</button>
           </div>
           <div className="col-lg-6 hero__image">

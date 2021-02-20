@@ -16,3 +16,4 @@ export { default as Chandigarh } from "./images/communities/fl_chandigarh.png";
 export { default as Gwalior } from "./images/communities/fl_gwalior.jpg";
 export { default as Kolkata } from "./images/communities/fl_kolkata.jpg";
 export { default as Generic } from "./images/communities/fl_generic.png";
+export { default as Kerala } from "./images/communities/fl_kerala.svg";
