@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/fl_generic.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
       content="Join the Flutter community around the world for this special online event! There will be opportunities to engage, innovate, and collaborate with the global community."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <link
@@ -23,6 +22,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <style>
+      html {
+        overflow-y: hidden;
+      }
       body {
         overflow-y: hidden;
       }
@@ -40,7 +42,8 @@
       }
 
       .flutter__india__logo {
-        height: 50%;
+        max-width: 75%;
+        width: 325px;
         box-sizing: content-box;
       }
     </style>
@@ -53,23 +56,24 @@
     <div class="splash__wrapper">
       <img
         class="flutter__india__logo"
-        src="./flutter-splash.gif"
+        src="./flappy-dash.gif"
         alt="Flutter Paint Animation"
       />
     </div>
-
+    <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
     <script>
-     document.addEventListener('DOMContentLoaded',()=>{
-       console.log('ready')
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("ready");
         setTimeout(() => {
-        let el = document.querySelector(".splash__wrapper");
-        el.style.opacity = 0;
-        document.querySelector("body").style.overflowY = "visible";
-        setTimeout(() => {
-          el.style.display = "none";
-        }, 250);
-      }, 3500);
-     })
+          let el = document.querySelector(".splash__wrapper");
+          el.style.opacity = 0;
+          document.querySelector("body").style.overflowY = "visible";
+          document.querySelector("html").style.overflowY = "visible";
+          setTimeout(() => {
+            el.style.display = "none";
+          }, 250);
+        }, 2500);
+      });
     </script>
   </body>
 </html>

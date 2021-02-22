@@ -1,9 +1,15 @@
 // All Exports from assets folder should go here
 
-export { default as HeroImage } from "./images/hero_image.png";
+// export { default as HeroImage } from "./images/hero_image.png";
+export { default as HeroImage } from "./images/hero-pakka-bhai-pakka.png";
+
 export { default as ScheduleImage } from "./images/schedule.png";
 
 export { default as GoogleDevs } from "./images/googledevs.png";
+export { default as FlutterCommunity } from "./images/flutter.png";
+
+export { default as FlareAnimation } from "./rive/fe_india.riv";
+
 // Communities
 
 export { default as Ahemdabad } from "./images/communities/fl_ahm.jpg";
@@ -17,3 +23,4 @@ export { default as Gwalior } from "./images/communities/fl_gwalior.jpg";
 export { default as Kolkata } from "./images/communities/fl_kolkata.jpg";
 export { default as Generic } from "./images/communities/fl_generic.png";
 export { default as Kerala } from "./images/communities/fl_kerala.svg";
+export { default as Trivandrum } from "./images/communities/fl_tri.png";

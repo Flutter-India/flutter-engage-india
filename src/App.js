@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <HeroSection />
-      <ScheduleSection />
+      {/* <ScheduleSection />  */}
       <CommunitiesSection />
       <FooterSection />
     </>

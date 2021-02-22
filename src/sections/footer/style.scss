@@ -24,15 +24,38 @@
           text-align: center;
         }
       }
-      .google__devs {
-        img {
-          height: 42px;
-        }
+      .powered__logos {
+        display: flex;
+        margin-bottom: 0.25rem;
+        align-items: center;
+        flex-direction: row;
+
         @media only screen and (max-width: 720px) {
-          display: flex;
-          justify-content: center;
+          flex-direction: column-reverse;
+          margin-top: .5rem;
+        }
+
+        .google__devs {
+          img {
+            height: 42px;
+          }
+          @media only screen and (max-width: 720px) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .flutter__community {
+          margin-left: 0.75rem;
+          img {
+            height: 32px;
+          }
+          @media only screen and (max-width: 720px) {
+            display: flex;
+            justify-content: center;
+          }
         }
       }
+
       .footer__disclaimer {
         color: var(--color-text-secondary);
         font-size: 0.9rem;

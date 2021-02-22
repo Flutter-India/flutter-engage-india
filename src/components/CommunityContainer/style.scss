@@ -3,7 +3,13 @@
   height: 148px;
   display: flex;
   flex-direction: column;
+  transition: all ease-in-out 250ms;
   justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
   .community__image {
     margin: 0 auto;
@@ -12,6 +18,7 @@
     overflow: hidden;
 
     img {
+      transition: all ease-in-out 250ms;
       margin: 0 auto;
       max-width: 75%;
     }
@@ -22,6 +29,17 @@
     font-size: 1rem;
     text-align: center;
   }
+
+  &:hover {
+    .community__image {
+      img {
+        max-width: 80%;
+      }
+    }
+    a {
+      color: var(--color-primary);
+    }
+  }
 }
 #Chandigarh,
 #Delhi,
@@ -31,7 +49,7 @@
 #Bangalore {
   padding: 1.25rem;
 }
-#Kerala{
+#Kerala {
   padding: 1.25rem;
   width: 172px;
   margin-top: 1rem;

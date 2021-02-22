@@ -1,6 +1,6 @@
 import React from "react";
 
-import { GoogleDevs } from "../../assets";
+import { GoogleDevs, FlutterCommunity } from "../../assets";
 
 // Styles
 import "./style.scss";
@@ -12,8 +12,13 @@ export default function FooterSection() {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="powered__by">Powered by</div>
-            <div className="google__devs">
-              <img src={GoogleDevs} alt="Google Developers" />
+            <div className="powered__logos">
+              <div className="google__devs">
+                <img src={GoogleDevs} alt="Google Developers" />
+              </div>
+              <div className="flutter__community">
+                <img src={FlutterCommunity} alt="Flutter Community" />
+              </div>
             </div>
             <div className="footer__disclaimer">
               Flutter and the related logo are trademarks of Google LLC. Flutter

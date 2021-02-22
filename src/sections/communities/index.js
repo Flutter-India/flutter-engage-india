@@ -19,7 +19,12 @@ export default function CommunitiesSection() {
         <div className="communities__logos">
           {communitiesData.map((e, index) => {
             return (
-              <CommunityContainer logo={e.logo} title={e.title} key={index} />
+              <CommunityContainer
+                logo={e.logo}
+                title={e.title}
+                key={index}
+                twitter={e.twitter}
+              />
             );
           })}
         </div>

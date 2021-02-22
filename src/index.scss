@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "product_sansregular";
+  src: url("./assets/fonts/product_sans_regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/product_sans_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Product Sans", sans-serif;
+  font-family: "product_sansregular", "Roboto", sans-serif;
 }
 
 :root {
@@ -13,6 +20,10 @@
   --color-text: #000000;
   --color-text-secondary: #5e5e5e;
   font-size: 16px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
