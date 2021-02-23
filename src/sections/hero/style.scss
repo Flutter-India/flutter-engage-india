@@ -53,28 +53,28 @@
           }
         }
 
-        &::after {
-          position: absolute;
-          content: "Extended";
-          background: var(--color-highlight);
-          color: white;
-          font-weight: 500;
-          padding: 0.25rem 0.5rem;
-          top: -1.25rem;
-          right: 0px;
-          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.16);
-          font-size: 1.25rem;
+        // &::after {
+        //   position: absolute;
+        //   content: "Extended";
+        //   background: var(--color-highlight);
+        //   color: white;
+        //   font-weight: 500;
+        //   padding: 0.25rem 0.5rem;
+        //   top: -1.25rem;
+        //   right: 0px;
+        //   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.16);
+        //   font-size: 1.25rem;
 
-          @media only screen and (max-width: 720px) {
-            bottom: -1.75rem;
-            top: auto;
-            left: 0;
-            font-size: 1rem;
-            right: 0;
-            width: max-content;
-            margin: 0 auto;
-          }
-        }
+        //   @media only screen and (max-width: 720px) {
+        //     bottom: -1.75rem;
+        //     top: auto;
+        //     left: 0;
+        //     font-size: 1rem;
+        //     right: 0;
+        //     width: max-content;
+        //     margin: 0 auto;
+        //   }
+        // }
       }
 
       .hero__description {

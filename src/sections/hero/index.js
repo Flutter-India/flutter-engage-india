@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { HeroImage, FlareAnimation } from "../../assets";
-
-import FlareComponent from "flare-react";
+import React from "react";
+import { HeroImage } from "../../assets";
 
 import swal from "sweetalert";
 
@@ -9,27 +7,6 @@ import swal from "sweetalert";
 import "./style.scss";
 
 export default function HeroSection() {
-  const riveAnimation = useRef();
-
-  useEffect(() => {
-    /* eslint-disable no-undef */
-    const animation = new RiveAnimation({
-      src: FlareAnimation, // host your Rive file and add the url to src
-      canvas: riveAnimation.current,
-      autoplay: true,
-      loop: true,
-
-      alignment: new CanvasAlignment({
-        fit: "contain",
-        alignment: "center",
-      }),
-    });
-
-    animation.on("stop", (e) => {
-      animation.play();
-    });
-  }, []);
-
   return (
     <>
       <div className="hero__wrapper">
@@ -81,12 +58,6 @@ export default function HeroSection() {
           </div>
 
           <div className="col-lg-6 hero__image">
-            {/* <canvas
-              style={{ height: "450px" }}
-              className="rive__animation"
-              ref={riveAnimation}
-            ></canvas> */}
-
             <img src={HeroImage} alt="Flutter Engage India Extended" />
           </div>
         </div>
