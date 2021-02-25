@@ -33,13 +33,13 @@ export const communities = [
   {
     logo: Generic,
     title: "Chennai",
-    twitter: "https://twitter.com",
+    twitter: "https://twitter.com/flutterchennai",
   },
 
   {
     logo: Generic,
     title: "Delhi",
-    twitter: "https://www.meetup.com/FlutterDelhi/",
+    twitter: "https://twitter.com/DelhiFlutter",
   },
 
   {
@@ -50,7 +50,7 @@ export const communities = [
   {
     logo: Generic,
     title: "Hyderabad",
-    twitter: "https://www.meetup.com/Flutter-Hyderabad",
+    twitter: "https://twitter.com/FlutterHyderab1",
   },
   {
     logo: Kerala,
