@@ -17,13 +17,13 @@ export default function CommunitiesSection() {
         </div>
 
         <div className="communities__logos">
-          {communitiesData.map((e, index) => {
+          {communitiesData.map((item, index) => {
             return (
               <CommunityContainer
-                logo={e.logo}
-                title={e.title}
+                logo={item.logo}
+                title={item.title}
                 key={index}
-                twitter={e.twitter}
+                twitter={item.twitter}
               />
             );
           })}

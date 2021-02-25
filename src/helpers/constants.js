@@ -17,12 +17,12 @@ export const communities = [
   {
     logo: Ahemdabad,
     title: "Ahmedabad",
-    twitter: null,
+    twitter: "https://twitter.com/flutterahm",
   },
   {
     logo: Generic,
     title: "Bangalore",
-    twitter: null,
+    twitter: "https://twitter.com/flutterblr",
   },
   {
     logo: Chandigarh,
@@ -33,67 +33,72 @@ export const communities = [
   {
     logo: Generic,
     title: "Chennai",
-    twitter: null,
+    twitter: "https://twitter.com",
   },
 
   {
     logo: Generic,
     title: "Delhi",
-    twitter: null,
+    twitter: "https://www.meetup.com/FlutterDelhi/",
   },
 
   {
     logo: Gwalior,
     title: "Gwalior",
-    twitter: null,
+    twitter: "https://twitter.com/FlutterGWL",
   },
   {
     logo: Generic,
     title: "Hyderabad",
-    twitter: null,
+    twitter: "https://www.meetup.com/Flutter-Hyderabad",
   },
   {
     logo: Kerala,
     title: "Kerala",
-    twitter: null,
+    twitter: "https://twitter.com/FlutterKerala",
   },
   {
     logo: Kolkata,
     title: "Kolkata",
-    twitter: null,
+    twitter: "https://twitter.com/flutterkolkata",
   },
 
   {
     logo: Mumbai,
     title: "Mumbai",
-    twitter: null,
+    twitter: "https://twitter.com/MumbaiFlutter",
   },
   {
     logo: Nagpur,
     title: "Nagpur",
-    twitter: null,
+    twitter: "https://twitter.com/FlutterNagpur",
   },
 
   {
     logo: Generic,
     title: "Pune",
+    twitter: "https://twitter.com/flutterpune",
   },
   {
     logo: Surat,
     title: "Surat",
+    twitter: "https://twitter.com/fluttersurat",
   },
 
   {
     logo: Trivandrum,
     title: "Trivandrum",
+    twitter: "https://twitter.com/FlutterTvm",
   },
 
   {
     logo: Valsad,
     title: "Valsad",
+    twitter: "https://twitter.com/flutter_valsad",
   },
   {
     logo: Vadodra,
     title: "Vadodara",
+    twitter: "https://twitter.com/fluttervadodara",
   },
 ];
