@@ -7,6 +7,26 @@ import swal from "sweetalert";
 import "./style.scss";
 
 export default function HeroSection() {
+  const clickHandler = () => {
+    console.log("Handler");
+
+    var exampleCallback = function () {
+      swal(
+        "You're all set!",
+        "We'll be sending you all the details via an email shortly. See you at the event & Keep Fluttering ✨.",
+        "info"
+      );
+    };
+
+    window.EBWidgets.createWidget({
+      widgetType: "checkout",
+      eventId: "143581565327",
+      modal: true,
+      modalTriggerElementId: "eventbrite-widget-modal-trigger-143581565327",
+      onOrderComplete: exampleCallback,
+    });
+  };
+
   return (
     <>
       <div className="hero__wrapper">
@@ -39,12 +59,11 @@ export default function HeroSection() {
             <div className="hero__schedule">Saturday, 13 March, 2021</div>
             <div className="actions__wrapper">
               <button
+                id="eventbrite-widget-modal-trigger-143581565327"
                 className="hero__call__to__action"
-                onClick={() =>
-                  swal("Stay Tuned!", "Registrations Opening Soon...", "info")
-                }
+                onClick={() => clickHandler()}
               >
-                Coming Soon
+                Register
               </button>
 
               <a

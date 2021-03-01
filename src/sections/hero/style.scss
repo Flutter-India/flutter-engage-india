@@ -113,6 +113,13 @@
       .actions__wrapper {
         display: flex;
 
+        
+        @media only screen and (max-width: 720px) {
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+
         .hero__call__to__action {
           margin-top: 1rem;
           cursor: pointer;
@@ -150,7 +157,7 @@
         color: #7084d7;
         padding: 0.5rem 1.75rem;
         width: max-content;
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         border: 1px solid #7084d7;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.16);
         transition: all ease-in-out 250ms;
@@ -159,6 +166,7 @@
         @media only screen and (max-width: 720px) {
           margin: 0 auto;
           margin-top: 1rem;
+        font-size: 1rem;
         }
 
         @media only screen and (max-width: 325px) {
