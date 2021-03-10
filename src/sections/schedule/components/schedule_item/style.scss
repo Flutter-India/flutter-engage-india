@@ -1,0 +1,75 @@
+.schedule__item {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  @media only screen and (max-width:720px){
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+
+  .schedule__time {
+    flex: 1;
+    font-size: 1.5rem;
+    align-items: flex-start;
+    display: flex;
+
+    span {
+      margin-left: 1rem;
+      margin-top: .25rem;
+      font-size: 1rem;
+    }
+
+
+    @media only screen and (max-width:996px){
+      flex-direction: column;
+      span{
+        margin-left: 0;
+      }
+    }
+
+    @media only screen and (max-width:720px){
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.25rem;
+      span{
+        margin-left: 0.5rem;
+      }
+    }
+
+    
+  }
+
+  .schedule__item__content {
+    flex: 5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-secondary);
+    align-items: flex-start;
+
+    .schedule__item__title {
+      color: black;
+      text-align: left;
+      font-size: 1.75rem;
+      font-weight: 400;
+
+
+      span{
+        color: rgba(0,0,0,0.75);
+        font-weight: 500;
+      }
+    }
+
+    .schedule__speaker {
+      .speaker__name {
+        font-weight: 600;
+      }
+      .speaker__description {
+        font-weight: 300;
+      }
+    }
+  }
+}

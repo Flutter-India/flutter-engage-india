@@ -5,7 +5,7 @@ import { GoogleDevs, FlutterCommunity } from "../../assets";
 // Styles
 import "./style.scss";
 
-export default function FooterSection() {
+export default function FooterSection({ setIsOpen }) {
   return (
     <>
       <div className="footer__wrapper">
@@ -26,41 +26,50 @@ export default function FooterSection() {
             </div>
           </div>
           <div className="col-lg-2 ">
-            <a
-              target="_blank"
-              rel="noopener"
-              className="footer__icon"
-              href="https://twitter.com/indiaflutter?lang=en"
-            >
-              <i className="fab fa-twitter" />
-            </a>
+            <div className="row">
+              <a
+                target="_blank"
+                rel="noopener"
+                className="footer__icon"
+                href="https://twitter.com/indiaflutter?lang=en"
+              >
+                <i className="fab fa-twitter" />
+              </a>
 
-            <a
-              target="_blank"
-              rel="noopener"
-              className="footer__icon"
-              href="https://www.linkedin.com/company/flutterindia"
-            >
-              <i className="fab fa-linkedin" />
-            </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                className="footer__icon"
+                href="https://www.linkedin.com/company/flutterindia"
+              >
+                <i className="fab fa-linkedin" />
+              </a>
 
-            <a
-              target="_blank"
-              rel="noopener"
-              className="footer__icon"
-              href="https://www.facebook.com/IndiaFlutter/"
-            >
-              <i className="fab fa-facebook" />
-            </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                className="footer__icon"
+                href="https://www.facebook.com/IndiaFlutter/"
+              >
+                <i className="fab fa-facebook" />
+              </a>
 
-            <a
-              target="_blank"
-              rel="noopener"
-              className="footer__icon"
-              href="https://www.youtube.com/flutterindia"
+              <a
+                target="_blank"
+                rel="noopener"
+                className="footer__icon"
+                href="https://www.youtube.com/flutterindia"
+              >
+                <i className="fab fa-youtube" />
+              </a>
+            </div>
+            <div
+              id="codeofconduct__footer"
+              className="row"
+              onClick={() => setIsOpen(true)}
             >
-              <i className="fab fa-youtube" />
-            </a>
+              Code Of Conduct
+            </div>
           </div>
         </div>
       </div>
